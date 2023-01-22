@@ -1,0 +1,19 @@
+<div id="book-list">
+    <table>
+        <caption>Books Inventory</caption>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Date of Publication</th>
+          </tr>
+          <tr (click)="onSelect(book)" class="row" *ngFor="let book of books">
+            <td>{{book.id}}</td>
+            <td>{{book.name}}</td>
+            <td>{{book.author}}</td>
+            <td>{{book.pages}}</td>
+            <td>{{book.dop | date}}</td>
+          </tr>
+    </table>
+</div>

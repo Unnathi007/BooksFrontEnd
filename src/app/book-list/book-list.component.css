@@ -1,0 +1,50 @@
+table{
+    border-radius:4px;
+    background-image: linear-gradient(to right,rgb(230,230,250) ,rgb(190, 181, 181));
+    padding:20px;
+    width:90%;
+    justify-content: center;
+    border-collapse: collapse;
+    box-shadow: 10px 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+#book-list{
+    display:flex;
+    justify-content: center;
+    object-fit: cover;
+    align-items: center;
+    align-content: center;
+    margin-top:50px;
+}
+#books{
+    text-decoration: overline aqua;
+    box-shadow: 10px 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+caption{
+    
+    font-size: 35px;
+    margin:auto;
+    background-image: linear-gradient(to left,rgb(230,230,250) ,rgb(190, 181, 181));
+    box-shadow: 10px 6px 6px 10px rgba(0, 0, 0, 0.2);
+    padding:15px;
+
+}
+tr{
+    background-image: radial-gradient(circle,rgb(230,230,250) ,rgb(190, 181, 181),rgb(230,230,250));
+    
+}
+th{
+    background-image: radial-gradient(circle,rgb(219, 219, 234) ,rgb(226, 210, 210),rgb(210, 210, 226));
+}
+th,td{
+    padding: 15px;
+    text-align:center;
+}
+tr{
+    border-bottom:1.5px solid rgb(215, 232, 233);
+}
+.row:hover{
+    box-shadow:8px 6px 8px 6px rgba(0, 0, 0, 0.2);
+    background-image: radial-gradient(circle,rgb(59, 55, 55) ,rgb(190, 181, 181),rgb(59, 55, 55));
+    background-color: rgb(59, 55, 55);
+    color: white;
+}

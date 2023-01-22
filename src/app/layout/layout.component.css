@@ -1,0 +1,33 @@
+.header{
+    background-color : cadetblue;
+    color:aliceblue;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+#title{
+    background-color:white;/*rgb(142, 133, 133);*/
+    color:rgb(50, 114, 116);
+    padding:10px 0px 10px 30px;
+    margin-bottom:2px;
+    border-radius: 10px;
+    border-top: 8px solid cadetblue ;/*rgb(50, 114, 116);rgb(61, 81, 99);*/
+    border-left: 6px solid cadetblue ;
+}
+ul{
+    display:flex;
+    list-style: none;
+}
+li{
+   padding:0px 55px 0px 0px; 
+   font-size:20px;
+}
+a{
+    text-decoration:none;
+    color:aliceblue;
+}
+a:hover{
+    background-color : rgb(26, 108, 113);
+    color:black;
+    border-radius :6px;
+    padding:10px;
+}
