@@ -67,12 +67,12 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
-            "production": {
-              "browserTarget": "BooksCrudDemo:build:production"
-            },
-            "development": {
-              "browserTarget": "BooksCrudDemo:build:development"
-            }
+          "production": {"browserTarget": "BooksCrudDemo:build:production"},
+          "development": {"browserTarget": "BooksCrudDemo:build:development"}
+          },
+          "options": {
+            "browserTarget": "BooksCrudDemo:build",
+            "proxyConfig": "src/proxy.conf.json"
           },
           "defaultConfiguration": "development"
         },
