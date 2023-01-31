@@ -1,6 +1,8 @@
 import { Component, OnInit,EventEmitter, Output } from '@angular/core';
 import { ActivatedRoute, Router,ParamMap } from '@angular/router';
 import { BookService } from '../book.service';
+import { DataService } from '../data.service';
+// import { DataService } from './data.service';
 @Component({
   selector: 'app-book-list',
   templateUrl: './book-list.component.html',
@@ -15,7 +17,7 @@ export class BookListComponent implements OnInit {
   //   {"id":3,"name":"MongoDB","author":"abc","pages":12,"dop":Date.parse("1/21/2023")}
   // ]
   // @Output() bookEvent=new EventEmitter<Object>();
-  constructor(private router:Router,private route:ActivatedRoute,private _bookService:BookService) { }
+  constructor(public dataService: DataService,private router:Router,private route:ActivatedRoute,private _bookService:BookService) { }
 
   ngOnInit(): void {
     this.books=this._bookService.getBooks().subscribe(data=>this.books=data,
@@ -25,6 +27,7 @@ export class BookListComponent implements OnInit {
   onSelect(book:any){
     // this.bookEvent.emit(book);
     this.router.navigate(['book-detail',book.id]);
+    this.dataService.serviceData=book;
   }
 
 }
