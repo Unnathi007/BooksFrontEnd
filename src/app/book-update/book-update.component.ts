@@ -49,21 +49,12 @@ export class BookUpdateComponent implements OnInit {
       id:[this.book.id],
       name:[this.book.name],
       author:[this.book.author],
-      publication_date:[this.date],//Date.parse(this.book.publication_date)],
+      publication_date:[this.date],
       pages:[this.book.pages]
       
     });
-    
-    //this.updateForm.get('publication_date').patchValue([this.date.getFullYear(),this.date.getMonth(), this.date.getDate()].join('-'));
-    //'MM/dd/yyyy'
     console.log(formatDate(this.book['publication_date'], 'yyyy-MM-dd', 'en-IN'),this.book['publication_date'])
   }
-  // insertForm=this.fb.group({
-  //   name:[],
-  //   author:[''],
-  //   dop:[''],
-  //   pages:['']
-  // });
   
   onSubmit(){
     

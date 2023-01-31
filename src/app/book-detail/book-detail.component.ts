@@ -16,12 +16,8 @@ export class BookDetailComponent implements OnInit {
   ]
   book:any;
   constructor(public dataService:DataService,private router:Router,private route:ActivatedRoute) { }
-  // @Input() book:any;
+ 
   ngOnInit(): void {
-    // this.route.paramMap.subscribe((params:ParamMap)=>{
-    //   let id1=Number(params.get('id'));
-    //   this.book=this.books.filter((book)=>{if(book.id==id1){return book}else {return null;}})[0];
-    // })
     this.book=this.dataService.serviceData;
   }
   
