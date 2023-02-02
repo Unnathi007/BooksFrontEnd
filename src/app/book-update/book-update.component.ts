@@ -63,5 +63,6 @@ export class BookUpdateComponent implements OnInit {
     this._updateService.update(this.updateForm.value, bookId ).subscribe(response=>console.log('Success!',response),
 
     error=>console.error('Error!',error))
+    this.router.navigate(['book-list',]);
   }
 }
